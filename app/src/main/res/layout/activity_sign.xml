@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/yellow">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:text="Welcome"
+        android:textSize="50sp"
+        android:textStyle="italic"
+        android:layout_gravity="center" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:text="SignUp To Continue "
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:layout_gravity="center" />
+    <LinearLayout
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_list"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/loginn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:text="LOGIN"
+                android:textColor="@color/black"
+                android:background="#00FFFFFF"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/SignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginLeft="50dp"
+                android:text="Sign-Up"
+                android:textColor="@color/black"
+                android:background="#00FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/sign"-->
+<!--            android:text="SignUp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textSize="30sp"-->
+<!--            android:padding="20dp"/>-->
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+            android:hint="UserName"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:hint="EMAIL"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/PASSWORD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:hint="Password"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/tex3t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="By pressing 'Submit' you agree to our
+            terms and condition"
+            android:textColor="#686767"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_arrow_forward_24"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:id="@+id/google"
+            android:layout_width="84dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/googles" />
+
+        <ImageButton
+            android:id="@+id/facebook"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/facebooks"/>
+    </LinearLayout>
+</LinearLayout>
